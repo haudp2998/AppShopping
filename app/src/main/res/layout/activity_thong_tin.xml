@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:title="Thông tin"
+        android:id="@+id/toolbarthongtin"
+        android:background="#979392"
+        app:titleTextColor="#f20"
+        android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/hinhnen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:textColor="#f2edec"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="Thông tin về chúng tôi"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/boder"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:src="@drawable/icondiachi"
+                android:layout_height="60dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:text="Địa chỉ: 280 An Dương Vương"
+                android:textColor="#494847"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/boder"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinActivity" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
